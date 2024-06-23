@@ -4,7 +4,8 @@ public class Main {
 
         //BubbleSort.runBubbleSortAlgorithm();
         //SelectionSort.runSelectionSortAlgorithm();
-        LinearSearch.runLinearSearchAlgorithm();
+        //LinearSearch.runLinearSearchAlgorithm();
+        BinarySearch.runBinarySearchAlgorithm();
 
     }
 
