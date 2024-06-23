@@ -3,8 +3,8 @@ public class Main {
     public static void main(String[] args) {
 
         //BubbleSort.runBubbleSortAlgorithm();
-
-        SelectionSort.runSelectionSortAlgorithm();
+        //SelectionSort.runSelectionSortAlgorithm();
+        LinearSearch.runLinearSearchAlgorithm();
 
     }
 
