@@ -6,7 +6,7 @@ public class Main {
         //SelectionSort.runSelectionSortAlgorithm();
         //LinearSearch.runLinearSearchAlgorithm();
         //BinarySearch.runBinarySearchAlgorithm();
-        InsertionSort.runInsertionSortAlgorithm();
+        InsertionSort.runInsertionSortImprovedAlgorithm();
 
     }
 
