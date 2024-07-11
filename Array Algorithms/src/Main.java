@@ -7,7 +7,8 @@ public class Main {
         //LinearSearch.runLinearSearchAlgorithm();
         //BinarySearch.runBinarySearchAlgorithm();
         //InsertionSort.runInsertionSortImprovedAlgorithm();
-        QuickSort.runQuickSortAlgorithm();
+        //QuickSort.runQuickSortAlgorithm();
+        CountingSort.runCountingSortAlgorithm();
 
     }
 
