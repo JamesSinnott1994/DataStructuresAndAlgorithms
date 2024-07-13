@@ -8,7 +8,8 @@ public class Main {
         //BinarySearch.runBinarySearchAlgorithm();
         //InsertionSort.runInsertionSortImprovedAlgorithm();
         //QuickSort.runQuickSortAlgorithm();
-        CountingSort.runCountingSortAlgorithm();
+        //CountingSort.runCountingSortAlgorithm();
+        RadixSort.runRadixSortAlgorithm();
 
     }
 
