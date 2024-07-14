@@ -9,7 +9,8 @@ public class Main {
         //InsertionSort.runInsertionSortImprovedAlgorithm();
         //QuickSort.runQuickSortAlgorithm();
         //CountingSort.runCountingSortAlgorithm();
-        RadixSort.runRadixSortAlgorithm();
+        //RadixSort.runRadixSortAlgorithm();
+        MergeSort.runMergeSortAlgorithm();
 
     }
 
