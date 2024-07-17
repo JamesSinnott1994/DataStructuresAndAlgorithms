@@ -1,3 +1,5 @@
+package ArrayAlgorithms;
+
 public class BinarySearch {
 
     public static void runBinarySearchAlgorithm() {

@@ -1,3 +1,5 @@
+package ArrayAlgorithms;
+
 public class QuickSort {
 
     /*
