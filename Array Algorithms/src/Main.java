@@ -102,7 +102,11 @@ public class Main {
 
         //System.out.println("The lowest value in the linked list is: " + findLowestValue(node1));
 
-        node1 = deleteSpecificNode(node1, node4);
+        //node1 = deleteSpecificNode(node1, node4);
+
+        // Insert a new node with value 97 at position 2
+        Node newNode = new Node(97);
+        node1 = insertNodeAtPosition(node1, newNode, 2);
 
         System.out.println("\nAfter deletion:");
         traverseAndPrint(node1);
@@ -146,6 +150,24 @@ public class Main {
 
         currentNode.next = currentNode.next.next;
 
+        return head;
+    }
+
+    public static Node insertNodeAtPosition(Node head, Node newNode, int position) {
+        if (position == 1) {
+            newNode.next = head;
+            return newNode;
+        }
+
+        Node currentNode = head;
+        for (int i = 1; i < position - 1 && currentNode != null; i++) {
+            currentNode = currentNode.next;
+        }
+
+        if (currentNode != null) {
+            newNode.next = currentNode.next;
+            currentNode.next = newNode;
+        }
         return head;
     }
 
