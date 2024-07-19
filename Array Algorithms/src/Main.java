@@ -97,8 +97,15 @@ public class Main {
         node3.next = node4;
         node4.next = node5;
 
+        System.out.println("Before deletion:");
         traverseAndPrint(node1);
-        System.out.println("The lowest value in the linked list is: " + findLowestValue(node1));
+
+        //System.out.println("The lowest value in the linked list is: " + findLowestValue(node1));
+
+        node1 = deleteSpecificNode(node1, node4);
+
+        System.out.println("\nAfter deletion:");
+        traverseAndPrint(node1);
     }
 
     public static void traverseAndPrint(Node head) {
@@ -120,6 +127,26 @@ public class Main {
             currentNode = currentNode.next;
         }
         return minValue;
+    }
+
+    public static Node deleteSpecificNode(Node head, Node nodeToDelete) {
+
+        if (head == nodeToDelete) {
+            return head.next;
+        }
+
+        Node currentNode = head;
+        while (currentNode.next != null && currentNode.next != nodeToDelete) {
+            currentNode = currentNode.next;
+        }
+
+        if (currentNode.next == null) {
+            return head;
+        }
+
+        currentNode.next = currentNode.next.next;
+
+        return head;
     }
 
 }
