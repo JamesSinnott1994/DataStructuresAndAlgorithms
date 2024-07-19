@@ -98,6 +98,7 @@ public class Main {
         node4.next = node5;
 
         traverseAndPrint(node1);
+        System.out.println("The lowest value in the linked list is: " + findLowestValue(node1));
     }
 
     public static void traverseAndPrint(Node head) {
@@ -107,6 +108,18 @@ public class Main {
             currentNode = currentNode.next;
         }
         System.out.println("null");
+    }
+
+    public static int findLowestValue(Node head) {
+        int minValue = head.data;
+        Node currentNode = head.next;
+        while (currentNode != null) {
+            if (currentNode.data < minValue) {
+                minValue = currentNode.data;
+            }
+            currentNode = currentNode.next;
+        }
+        return minValue;
     }
 
 }
