@@ -1,10 +1,12 @@
 import LinkedLists.Node;
+import StacksAndQueues.Stack;
 
 public class Main {
 
     public static void main(String[] args) {
         //createDoublyLinkedList();
-        traverseAndPrintRun();
+        //traverseAndPrintRun();
+        callStackFunctionality();
     }
 
     public static void createLinkedList() {
@@ -169,6 +171,25 @@ public class Main {
             currentNode.next = newNode;
         }
         return head;
+    }
+
+    /* Stacks and Queues */
+
+    public static void callStackFunctionality() {
+        Stack myStack = new Stack(10);
+
+        myStack.push('A');
+        myStack.push('B');
+        myStack.push('C');
+
+        // Print initial stack
+        System.out.print("Stack: ");
+        myStack.printStack();
+
+        System.out.println("Pop: " + myStack.pop());
+        System.out.println("Peek: " + myStack.peek());
+        System.out.println("isEmpty: " + myStack.isEmpty());
+        System.out.println("Size: " + myStack.size());
     }
 
 }
