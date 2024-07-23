@@ -1,4 +1,5 @@
 import LinkedLists.Node;
+import StacksAndQueues.Queue;
 import StacksAndQueues.Stack;
 
 public class Main {
@@ -6,7 +7,8 @@ public class Main {
     public static void main(String[] args) {
         //createDoublyLinkedList();
         //traverseAndPrintRun();
-        callStackFunctionality();
+        //callStackFunctionality();
+        callQueueFunctionality();
     }
 
     public static void createLinkedList() {
@@ -190,6 +192,23 @@ public class Main {
         System.out.println("Peek: " + myStack.peek());
         System.out.println("isEmpty: " + myStack.isEmpty());
         System.out.println("Size: " + myStack.size());
+    }
+
+    public static void callQueueFunctionality() {
+        Queue myQueue = new Queue(10);
+
+        myQueue.enqueue('A');
+        myQueue.enqueue('B');
+        myQueue.enqueue('C');
+        myQueue.printQueue();
+
+        System.out.println("Dequeue: " + myQueue.dequeue());
+
+        System.out.println("Peek: " + myQueue.peek());
+
+        System.out.println("isEmpty: " + myQueue.isEmpty());
+
+        System.out.println("Size: " + myQueue.size());
     }
 
 }
