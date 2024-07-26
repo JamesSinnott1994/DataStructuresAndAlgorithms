@@ -3,6 +3,8 @@ import LinkedLists.Node;
 import StacksAndQueues.Queue;
 import StacksAndQueues.Stack;
 
+import java.util.LinkedList;
+
 import static HashTables.HashTables.hashFunction;
 
 public class Main {
@@ -223,12 +225,25 @@ public class Main {
         String value = "Bob";
         System.out.println("'" + value + "' has hash code: " + hashFunction(value));
 
-        String[] myHashSet = {null, "Jones", null, "Lisa", null, "Bob",
-                null, "Siri", "Pete", null};
+        // System.out.println("'Pete' is in the Hash Set: " + HashTables.contains("Pete"));
 
-        System.out.println("'Pete' is in the Hash Set: " + HashTables.contains("Pete", myHashSet));
+        LinkedList<String>[] myHashSet = new LinkedList[10];
 
+        for (int i = 0; i < myHashSet.length; i++) {
+            myHashSet[i] = new LinkedList<>();
+        }
 
+        HashTables.add("Jones", myHashSet);
+        HashTables.add("Lisa", myHashSet);
+        HashTables.add("Bob", myHashSet);
+        HashTables.add("Siri", myHashSet);
+        HashTables.add("Pete", myHashSet);
+        HashTables.add("Stuart", myHashSet);
+
+        for (LinkedList<String> bucket : myHashSet) {
+            System.out.println(bucket);
+        }
+        System.out.println("Contains Stuart: " + HashTables.contains("Stuart", myHashSet));
 
 
     }
