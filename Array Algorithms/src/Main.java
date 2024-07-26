@@ -2,13 +2,16 @@ import LinkedLists.Node;
 import StacksAndQueues.Queue;
 import StacksAndQueues.Stack;
 
+import static HashTables.HashTables.hashFunction;
+
 public class Main {
 
     public static void main(String[] args) {
         //createDoublyLinkedList();
         //traverseAndPrintRun();
         //callStackFunctionality();
-        callQueueFunctionality();
+        //callQueueFunctionality();
+        callHashTableFunctionality();
     }
 
     public static void createLinkedList() {
@@ -209,6 +212,15 @@ public class Main {
         System.out.println("isEmpty: " + myQueue.isEmpty());
 
         System.out.println("Size: " + myQueue.size());
+    }
+
+    /* Stacks and Queues */
+
+    /* Hash Tables */
+
+    public static void callHashTableFunctionality() {
+        String value = "Bob";
+        System.out.println("'" + value + "' has hash code: " + hashFunction(value));
     }
 
 }
