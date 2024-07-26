@@ -1,3 +1,4 @@
+import HashTables.HashTables;
 import LinkedLists.Node;
 import StacksAndQueues.Queue;
 import StacksAndQueues.Stack;
@@ -221,6 +222,15 @@ public class Main {
     public static void callHashTableFunctionality() {
         String value = "Bob";
         System.out.println("'" + value + "' has hash code: " + hashFunction(value));
+
+        String[] myHashSet = {null, "Jones", null, "Lisa", null, "Bob",
+                null, "Siri", "Pete", null};
+
+        System.out.println("'Pete' is in the Hash Set: " + HashTables.contains("Pete", myHashSet));
+
+
+
+
     }
 
 }

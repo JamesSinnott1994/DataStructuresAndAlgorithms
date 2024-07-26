@@ -10,4 +10,9 @@ public class HashTables {
         return sum % 10;
     }
 
+    public static boolean contains(String name, String[] myHashSet) {
+        int index = hashFunction(name);
+        return myHashSet[index] != null && myHashSet[index].equals(name);
+    }
+
 }
