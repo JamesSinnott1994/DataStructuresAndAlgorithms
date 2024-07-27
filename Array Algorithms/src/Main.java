@@ -7,6 +7,8 @@ import java.util.LinkedList;
 
 import static HashTables.HashTables.hashFunction;
 import static HashTables.HashSets.runHashSetFunctionality;
+import static HashTables.HashMaps.runHashMapFunctionality;
+
 
 public class Main {
 
@@ -15,7 +17,8 @@ public class Main {
         //traverseAndPrintRun();
         //callStackFunctionality();
         //callQueueFunctionality();
-        callHashSetFunctionality();
+        //callHashSetFunctionality();
+        callHashMapFunctionality();
     }
 
     public static void createLinkedList() {
@@ -251,6 +254,10 @@ public class Main {
 
     public static void callHashSetFunctionality() {
         runHashSetFunctionality();
+    }
+
+    public static void callHashMapFunctionality() {
+        runHashMapFunctionality();
     }
 
     /* Hash Tables */
